@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yippee!</title>
+
+    <link rel="icon" href="img/logo.png">
+
+    <link rel="stylesheet" href="css/yippee.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+</head>
+
+<body>
+
+    <!--Login Popup Section-->
+    <div class="form-popup" id="myForm">
+        <form action="login.php" class="form-container" method="post">
+
+            Login<br><br>
+
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw">Password</label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <!--Navbar Section-->
+    <nav>
+        <div class="logo">
+            <a href=""><img src="img/logo.png" alt="Yippee Logo"></a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li id="signin" id="loginIcon">
+                    <div id="iconText">
+                        Login
+                    </div>
+                    <svg width="50" height="50">
+                        <circle cx="25" cy="25" r="20" stroke="white" stroke-width="1" fill="gray" />
+                        <circle cx="25" cy="20" r="7.5" stroke="white" stroke-width="1" fill="lightgray" />
+                        <path d="M 16 42.5 q 9 -22.5 18 0" stroke="white" stroke-width="1" fill="lightgray" />
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Main Section-->
+    <main>
+        <div id="bigLogo">
+            <img src="img/logo.png" alt="Yippee Large Logo">
+        </div>
+        <div id="searchPlace">
+            <input type="text" name="search" id="search" placeholder="Search here">
+            <div id="searchBtn">
+                <input type="button" value="Search" class="searchBtn">
+                <input type="button" value="Look up Definition" class="searchBtn">
+            </div>
+        </div>
+        <div id="appIcons">
+            <div id="mail">
+                <img src="img/yippeeMail.png" alt="Mail App Logo">
+            </div>
+            <div id="fotoFan">
+                <img src="img/yippeeFotoFan.png" alt="FotoFan App Logo">
+            </div>
+            <div id="drive">
+                <img src="img/yippeeDrive.png" alt="Drive App Logo">
+            </div>
+            <div id="GPS">
+                <img src="img/yippeeGPS.png" alt="GPS App Logo">
+            </div>
+            <div id="games">
+                <img src="img/yippeeGames.png" alt="Games App Logo">
+            </div>
+            <div id="food">
+                <img src="img/yippeeFood.png" alt="Food App Logo">
+            </div>
+            <div id="finance">
+                <img src="img/yippeeFinance.png" alt="Finance App Logo">
+            </div>
+            <div id="browser">
+                <img src="img/yippeeSearch.png" alt="Browser App Logo">
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('signin').addEventListener('click', function(event) {
+            openForm();
+
+
+        });
+
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>

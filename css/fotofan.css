@@ -1,0 +1,110 @@
+body, html {
+    margin:0;
+    padding:0;
+
+    overflow: scroll;
+
+    font-family: sans-serif;
+
+    color: white;
+
+    background-color: darkseagreen;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+}
+
+nav .logo img{
+    width: 20vh;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+
+    padding-left: 15px;
+
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#bigImage {
+    display: flex;
+    justify-content: center;
+}
+
+#imageHolder {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+}
+
+#image {
+    height: 50vh;
+}
+
+#album {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.photos {
+    width: 80px;
+    height: 80px;
+
+    overflow: hidden;
+}
+
+.photos img {
+    height: 100%;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+form #search {
+    width: 50%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    box-shadow: 0px 0px 10px 1px #8bc34aa8;
+}
+
+form #button {
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f0f8ff96;
+}
+
+form #button:hover {
+    background-color: aliceblue;
+}
